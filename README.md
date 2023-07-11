@@ -20,7 +20,7 @@ Time lapse images
 
 ### Dependencies
 
-* **Pure demoise** Fiji plugin
+* **Pure denoise** Fiji plugin
 * **Stackreg** Fiji plugin BIG-EPFL
 * **TurboReg** Fiji plugin BIG-EPFL
 

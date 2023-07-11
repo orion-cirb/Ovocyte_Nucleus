@@ -197,11 +197,11 @@ public class Ovocyte_nucleus implements PlugIn {
                         while (WindowManager.getWindow("Denoised-"+imgTitle) == null)
                             IJ.wait(10);
                         WindowManager.getWindow("Log").setVisible(false);
-                        img.close();
-                        img.flush();
                         ImagePlus imgFilter = WindowManager.getCurrentImage();
                         imgFilter.setDimensions(1, 1, img.getNFrames());
                         imgFilter.setCalibration(cal);
+                        img.close();
+                        img.flush();
                         imgFilter.hide();
                         IJ.run(imgFilter,"8-bit","");
                         IJ.run(imgFilter,"Gaussian Blur...", "sigma=2 stack");
